@@ -86,7 +86,8 @@ AFRAME.registerComponent('arjs-anchor', {
 				arProfile.defaultMarkerParameters.markersAreaEnabled = true
 			}else if( _this.data.type === 'pattern' ){
 				arProfile.defaultMarkerParameters.type = 'pattern'
-				arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl;
+				console.log("Custom FOUND ",_this.data);
+				arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl
 				arProfile.defaultMarkerParameters.markersAreaEnabled = false
 			}else {
 				// console.assert( this.data.preset === '', 'illegal preset value '+this.data.preset)
